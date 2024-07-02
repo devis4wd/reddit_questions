@@ -11,7 +11,7 @@
 
 /*GENERAL RULES FOR PAGE LAYOUT*/
 body {
-    background-image: url(../img/body-bg.png);
+    background-image: url(img/body-bg.png);
     font-family: "Amethysta", serif;
 }
 
@@ -53,7 +53,7 @@ a {
     position: absolute;
     top: 0;
     left: 0;
-    background-image: url(../img/frill-bg.png);
+    background-image: url(img/frill-bg.png);
     height: 28px;
     width: 100%;
 }
@@ -64,7 +64,7 @@ a {
     left: 0;
     bottom: 0;
     display: block;
-    background-image: url(../img/footer.png);
+    background-image: url(img/footer.png);
     height: 58px;
     width: 100%;
 }
@@ -101,13 +101,13 @@ section {
 }
 
 section h3 {
-    background-image: url(../img/preamble.png);
+    background-image: url(img/preamble.png);
     height: 70px;
     background-repeat: no-repeat;
 }
 
 header {
-    background-image: url(../img/pageheader-bg.png);
+    background-image: url(img/pageheader-bg.png);
     background-repeat: no-repeat;
     background-position: left;
     margin-left: -15px;
@@ -116,7 +116,7 @@ header {
 }
 
 header::before {
-    content: url(../img/certified.png);
+    content: url(img/certified.png);
     position: absolute;
     top: 45%;
     left: -21%;
@@ -146,19 +146,19 @@ header::before {
 }
 
 .explanation h3 {
-    background-image: url(../img/sowhat.png);
+    background-image: url(img/sowhat.png);
 }
 
 .participation h3 {
-    background-image: url(../img/participation.png);
+    background-image: url(img/participation.png);
 }
 
 .benefits h3 {
-    background-image: url(../img/benefits.png);
+    background-image: url(img/benefits.png);
 }
 
 .requirements h3 {
-    background-image: url(../img/requirements.png);
+    background-image: url(img/requirements.png);
 }
 
 footer {
@@ -198,13 +198,13 @@ li {
 }
 
 .select {
-    background-image: url(../img/select.png);
+    background-image: url(img/select.png);
 }
 
 .archives {
-    background-image: url(../img/archives.png);
+    background-image: url(img/archives.png);
 }
 
 .resources {
-    background-image: url(../img/resources.png);
+    background-image: url(img/resources.png);
 }
