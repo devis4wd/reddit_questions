@@ -262,16 +262,16 @@ nav {
 
 .gallery a:hover .gallery_tile::after {
     width: 100%;
-    background-color: #3dc9b49a;
+    background-color: #31333e8e;
 }
 
-.gallery a:hover #gallery2::after,
+/*.gallery a:hover #gallery2::after,
 .gallery a:hover #gallery4::after,
 .gallery a:hover #gallery6::after,
 .gallery a:hover #gallery8::after,
 .gallery a:hover #gallery10::after {
     background-color: #ffffff9a;
-}
+}*/
 
 #gallery1 {
     background-image: url(../img/aerial_forest.jpg);
@@ -311,6 +311,12 @@ nav {
 
 #gallery10 {
     background-image: url(../img/city2.jpg);
+}
+
+.gallery h3 {
+    z-index: 11;
+    color: var(--white);
+    text-transform: none;
 }
 
 
