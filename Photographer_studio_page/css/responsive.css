@@ -102,11 +102,11 @@
     /* STEP 2) Setting how elements will behave once I click on the burger menu*/
     .burger_menu:checked~nav {
         height: 100%;
-        transition: 0.5s ease-in-out;
+        transition: 0.5s linear;
     }
 
     .burger_menu:checked~nav .nav_link {
-        transition: 0.5s ease-in-out;
+        transition: 0.5s linear;
         font-size: clamp(1rem, 0.886rem + 0.571vw, 1.8rem);
 
     }
