@@ -1,0 +1,224 @@
+@charset "UTF-8";
+
+@media screen and (max-width:1366px) {
+
+    .gallery {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 30%));
+    }
+
+    .gallery_tile {
+        min-height: 15rem;
+    }
+
+    #gallery10 {
+        display: none;
+    }
+}
+
+
+@media screen and (max-width:1024px) {
+
+    .gallery {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 48%));
+    }
+
+    .gallery_tile {
+        min-height: 15rem;
+    }
+
+    #gallery10 {
+        display: grid;
+    }
+}
+
+/* Breakpoint where BURGER menu kicks in */
+@media screen and (max-width: 900px) {
+
+    /* STEP 1) Styling elements that will be affected once the burger menu is clicked*/
+    nav {
+        height: 0;
+        overflow: hidden;
+        grid-area: mobinav;
+        min-width: 40%;
+        text-align: right;
+        transition: 0.5s ease-in-out;
+    }
+
+    .burger_icon {
+        padding: 19px 0 19px 30px;
+        cursor: pointer;
+        order: 3;
+        justify-self: right;
+    }
+
+    .burger_line {
+        display: block;
+        width: 30px;
+        height: 2px;
+        background-color: var(--black);
+        position: relative;
+    }
+
+    .burger_line::before,
+    .burger_line::after {
+        content: '';
+        position: absolute;
+        display: block;
+        width: 100%;
+        height: 100%;
+        background-color: var(--black);
+    }
+
+    .burger_line::before {
+        top: 7px;
+    }
+
+    .burger_line::after {
+        bottom: 7px;
+    }
+
+    .nav_link {
+        display: block;
+        border-right: none;
+        padding: 0.2rem 0;
+        transition: 0.5s ease-in-out;
+        font-size: 0;
+    }
+
+    .nav_link:hover {
+        color: var(--white);
+        text-decoration: none;
+        padding: .2rem 0.5rem;
+        background-color: var(--black);
+        transition: 0.3s linear;
+    }
+
+    /* Turning off underline effect when I hover on nav links in mobile view */
+    .nav_link:first-of-type:hover.nav_link::after,
+    .nav_link:hover.nav_link::after {
+        width: 0;
+    }
+
+    /* STEP 2) Setting how elements will behave once I click on the burger menu*/
+    .burger_menu:checked~nav {
+        height: 100%;
+        transition: 0.5s ease-in-out;
+    }
+
+    .burger_menu:checked~nav .nav_link {
+        transition: 0.5s ease-in-out;
+        font-size: clamp(1rem, 0.886rem + 0.571vw, 1.8rem);
+
+    }
+
+    .burger_menu:checked~.burger_icon .burger_line {
+        background-color: transparent;
+    }
+
+    .burger_menu:checked~.burger_icon .burger_line:before {
+        transform: rotate(-45deg);
+        top: 0;
+    }
+
+    .burger_menu:checked~.burger_icon .burger_line:after {
+        transform: rotate(45deg);
+        top: 0;
+    }
+}
+
+@media screen and (max-width:768px) {
+
+    section,
+    footer {
+        padding: 8% 8%;
+    }
+
+    h3 {
+        padding: 2rem 0;
+    }
+
+    header {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "log bur"
+            ". mobinav";
+    }
+
+    .logo_box img {
+        max-width: 100%;
+    }
+
+    .burger_line {
+        width: 24px;
+    }
+
+    .herobox video {
+        min-height: 80vh;
+    }
+
+    .service_tile {
+        width: 60%;
+        padding: 10% 5%;
+    }
+
+    .portfolio {
+        padding: 8% 0 0 0;
+    }
+
+    .gallery {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 100%));
+        gap: 0;
+        margin: 2rem auto 0 auto;
+    }
+
+    #gallery7,
+    #gallery8,
+    #gallery9,
+    #gallery10 {
+        display: none;
+    }
+
+    form {
+        flex-direction: column;
+        align-items: center;
+        max-width: 100%;
+    }
+
+    .newsletter input {
+        min-width: 70%;
+        margin: 1rem auto 2rem auto;
+    }
+
+    .social_banner {
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .copyright_banner p {
+        min-width: 30%;
+        margin: 0.6rem auto;
+        text-align: center;
+    }
+}
+
+
+@media screen and (max-width:500px) {
+
+    .contact_tile h3 {
+        padding: 1rem 0;
+    }
+
+    header {
+        padding: 8% 4%;
+    }
+
+    .contact_tiles {
+        margin: 2rem auto;
+    }
+
+    .contact_tile {
+        min-width: 100%;
+        margin: 1.5rem auto;
+    }
+}
