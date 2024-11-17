@@ -41,7 +41,7 @@
         grid-area: mobinav;
         min-width: 40%;
         text-align: right;
-        transition: 0.5s ease-in-out;
+        transition: 0.1s linear;
     }
 
     .burger_icon {
@@ -81,7 +81,7 @@
         display: block;
         border-right: none;
         padding: 0.2rem 0;
-        transition: 0.5s ease-in-out;
+        transition: 0.1s linear;
         font-size: 0;
     }
 
@@ -167,7 +167,7 @@
 
     .gallery {
         grid-template-columns: repeat(auto-fit, minmax(200px, 100%));
-        gap: 0;
+        gap: 0.7;
         margin: 2rem auto 0 auto;
     }
 
